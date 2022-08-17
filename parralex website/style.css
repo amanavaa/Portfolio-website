@@ -1,0 +1,62 @@
+html , body{
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+}
+
+.img1{
+    background-image: url(images/image1.png);
+    min-height:100%;
+    
+  
+}
+ .img1 , .img2 , .img3{
+    position: relative;  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }   
+    
+.img2{
+    background-image: url(images/image2.png);
+    min-height:80%;
+}
+.img3{
+    background-image: url(images/image3.png);
+    min-height:70%;
+}
+.ptext{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 5px;
+
+}
+.ctext{
+    background: black;
+    padding: 8px 13px;
+}
+.ctext:hover{
+    background: yellow;
+    color: white;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.text-form{
+    padding:20px 50px;
+    text-align: center;
+}
+.section1{
+    background-color: whitesmoke;
+    color: grey;
+}
+h1{
+    text-transform: uppercase   ;
+}

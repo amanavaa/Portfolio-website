@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(137, 105, 105);
+}
+.container{
+    max-width: 900px;
+   
+    margin: 0 auto;
+}
+.login-page{
+    max-width: 650px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 25px;
+    box-shadow: 2px 2px 2px 2px rgba(1, 1, 1, 0.3);
+    border-radius: 8px;
+}
+.title{
+    font-size: 25px;
+}
+.input-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(240px , 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+.apply-job{
+    display: flex;
+    flex-direction: column;
+    gap:5px ;
+}
+label{
+    font-size: 15px ;
+    font-family: sans-serif;
+    font-weight:400 ;
+}
+select,textarea,input{
+    padding: 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    
+}
+input:focus{
+    outline-color: aqua;
+}
+.button-name{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+button{
+    background-color: red;
+    color: white;
+    border: transparent solid 1px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.4s ease-in;
+}
+button:hover{
+    background-color: yellow;
+    color: black;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.apply-address{
+    grid-column: 1/span 2;
+}
+textarea{
+    width: 100%;
+}
+@media (max-width:450px){
+    .apply-address{
+        grid-column: 1/span 1;
+    }
+}

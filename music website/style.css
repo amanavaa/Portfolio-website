@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-family: 'Roboto Slab', serif;
+}
+header{
+    background-color: rgb(36, 11, 118);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.4);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px 0;
+}
+nav ul{
+   list-style: none;
+   display: flex;
+   gap: 18px;
+}
+nav h1{
+    font-size: 35px;
+    font-weight: 800;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.3s ease-in-out;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.main-section{
+    background-image: url(images/hero_image.png);
+    height: 100vh;
+    color: white;
+    display: grid;
+    text-align: center;
+    place-items: center;
+}
+main .container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+main .container h1{
+    font-size: 90px;
+    
+}
+main .container h3{
+      font-size: 30px;
+}
+main .container h5{
+font-size: 15px;
+}
+/* music section */
+.music-section{
+    display: grid;
+    text-align: center;
+    place-items: center;
+    padding-bottom: 30px;
+
+}
+.music-section .fit{
+    background: rgb(22, 22, 133);
+    margin-bottom: 400px;
+    padding: 0 80px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.music-section .icon{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 5px;
+    align-items: center;
+}
+.music-section .icon span{
+    font-size: 23px;
+}
+.music-section .icon h3{
+    font-size: 25px;
+}
+.music-section h4{
+    font-weight: 300;
+}
+.music-section .trail-button{
+    align-self: center;
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    width:fit-content;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: transparent 2px solid;
+    box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+
+.music-section .trail-button:hover{
+    background-color: rgb(152, 15, 15);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.music-section p{
+    font-family: 'Times New Roman', Times, serif;
+    animation: blinker 0.5s linear infinite;
+    transition: 0.3s ease;
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: 600;
+}
+@keyframes blinker{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    0%{
+        opacity: 1;
+    }
+}
+.content-image{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 80px;
+
+}
+.ipad-mobile{
+    width:80%;
+    align-self: center;
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+.music-section h5{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.read-section{
+    align-self: center;
+    background-color: rgb(55, 30, 176);
+    color: white;
+    padding: 8px 15px;
+    width:fit-content;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: transparent 2px solid;
+    box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.music-section .read-section:hover{
+    background-color: rgb(45, 45, 108);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.laptope-image{
+    width: 80%;
+    align-self: center;
+}
+.video-section{
+    margin: 0 auto;
+    background-image: url(images/video.png);
+    padding: 40px 0;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+.content-video{
+    text-align: center;
+    margin: 50px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+}
+.videos-show{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+   
+}
+.videos-show .video{
+    border: 0.1px solid transparent;
+    position: relative;
+    background-size: cover;
+        box-shadow:2px 2px 2px rgba(1, 1, 1, 0.5); 
+        transition: 0.3s ease-in;
+}
+.video-section .video:hover{
+    transform: scale(1.03);
+    transition: 0.3s ease-out;
+}
+.video-section h4 a{
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    align-self:center;
+}
+.video-section h4:hover{
+    border-bottom: 2px solid white;
+    transition: 0.3s ease-in-out;
+}
+.both-gc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px ;
+    margin: 40px 60px;
+}
+.gift-change{
+    width: 100%;
+}
+.gift-content{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.gift-content h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(9, 9, 66);
+}
+.simple-line{
+    border: 0.8px solid gray;
+}
+.gift-reedem{
+    align-self:flex-start;
+    background-color: rgb(55, 30, 176);
+    color: white;
+    padding: 8px 15px;
+    width:fit-content;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: transparent 2px solid;
+    box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.5);
+    transition: 0.3s ease-in-out;   
+}
+.gift-reedem:hover{
+    background-color: rgb(45, 45, 108);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.contact-us{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 71, 164);
+}
+.four{
+    margin: 30px 40px;
+    text-transform: capitalize;
+}
+.four ul li{
+    list-style: none;
+}
+.four ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.four h1{
+    margin-bottom: 20px;
+    color: rgb(163, 150, 150);
+}
+.contact-us .broken{
+    border: 0.4px solid white;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+footer h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: white;
+
+}
+footer{
+background-color: rgb(147, 39, 39);
+}
+@media screen and (max-width:600px) {
+    .container{
+        max-width: 550px;
+        margin: 0 auto;
+    }
+    .bar{
+        font-size: 12px;
+        padding: 20px 25px;
+    }
+    .bar h1{
+        font-size:15px ;
+    }
+    .main-section .container h1{
+        font-size: 40px;
+    }
+    .main-section .container h3{
+        font-size: 15px;
+    }
+    .main-section .container h5{
+        font-size: 10px;
+    }
+    .main-section .container{
+        padding: 0 30px;
+    }
+    .music-section .icon span{
+        font-size: 15px
+    }
+    .music-section .icon h3{
+        font-size: 13px;
+    }
+    .fit .icon{
+        padding: 10px 0;
+    }
+    .fit h4{
+        font-size: 10px;
+        color: black;
+        
+    }
+    .music-section .fit{
+        gap: 20px; 
+              padding: 0 30px;
+           
+              
+    }
+   
+    .music-section .trail-button{
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+    .music-section p{
+        font-size: 12px;
+    }
+    
+
+    .content-image h3{
+        font-size: 14px;
+    }
+    .content-image h5{
+        font-size: 12px;
+    }
+    .content-image{
+        gap: 20px;
+        padding: 0 30px;
+    }
+    .both-gc{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+    
+    .gift-content h1{
+        font-size: 22px;
+    }
+    .gift-content p{
+        font-size: 12px;
+    }
+    .gift-content{
+        font-size: 13px;
+    }
+    .gift-reedem{
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    .both-gc{
+        margin: 20px 30px;
+    }
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .four h1{
+        font-size: 15px;
+    }
+    .four ul li a{
+        font-size: 12px;
+    }
+    .contact-us .four{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-us{
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        align-items: flex-start;
+
+    }
+    footer h1{
+        font-size: 15px;
+    }
+    
+}
